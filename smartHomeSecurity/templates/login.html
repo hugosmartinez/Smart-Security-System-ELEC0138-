@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Smart Security Login</title>
+        <link rel = "stylesheet" href = "../static/frontend_style.css">
+    </head>
+
+    <body>
+        <h1>Welcome to Smart Security Home</h1>
+        <form action = "/loginSubmit" method = "POST">
+            <h2>Login</h2>
+            <input type = "text" id = "username" name = "username" placeholder = "username"><br>
+            <input type = "text" id = "password" name = "password" placeholder = "password"><br>
+            <button type = "submit">Submit</button>
+        </form>
+        <p id = "errorMessage"> Invalid username or password.</p>
+    </body>
+    <script>
+        // Retrieve the error message from the URL query parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var error = urlParams.get('errorMsg');
+        
+        // Check if an error message exists
+        if (error) {
+            document.getElementById('errorMessage').style.display = 'block';
+        }
+    </script>
+</html>

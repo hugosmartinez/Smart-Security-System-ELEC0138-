@@ -1,0 +1,64 @@
+/* Reset default margin and padding */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #111;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #686767;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+div {
+    text-align: center;
+    color: #111;
+}
+form {
+    text-align: center;
+}
+input {
+    margin: 5px;
+}
+button {
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #002bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessage {
+    color: #f00;
+    display: none;
+    text-align: center;
+}

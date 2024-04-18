@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Security Signup</title>
+        <link rel = "stylesheet" href = "../static/frontend_style.css">
+    </head>
+
+    <body>
+        <h1>Welcome to Smart Security Home</h1>
+        <form action = "/signupSubmit" method = 'post'>
+            <h2>Login</h2>
+            <input type = "text" id = "firstName" name = "firstName" placeholder = "First Name"><br>
+            <input type = "text" id = "lastName" name = "lastName" placeholder = "Last Name"><br>
+            <input type = "text" id = "email" name = "email" placeholder = "Email Address"><br>
+            <input type = "text" id = "username" name = "username" placeholder = "Username"><br>
+            <input type = "text" id = "password" name = "password" placeholder = "Password"><br>
+            
+            <button type = "submit">Submit</button>
+        </form>
+
+        <div id = "loginMessage"></div>
+    </body>
+</html>

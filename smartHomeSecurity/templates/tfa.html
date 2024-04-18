@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Two Factor Authentication</title>
+        <link rel = "stylesheet" href = "../static/frontend_style.css">
+    </head>
+
+    <body>
+        <h1>You have been sent a code to log in.</h1>
+        <form action = "/tfaSubmit" method = "POST">
+            <h2>Code:</h2>
+            <input type = "text" id = "response" name = "response" placeholder = "code"><br>
+            <button type = "submit">Submit</button>
+        </form>
+    </body>
+</html>

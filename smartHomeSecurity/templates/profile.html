@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User Profile </title>
+        <link rel = "stylesheet" href = "../static/frontend_style.css">
+    </head>
+
+    <body>
+        <h2>Upload Video</h2>
+        <form action="/fileUpload" method="post" enctype="multipart/form-data">
+            <input type="file" name="uploadedFile" accept="video/*, text/plain"><br>
+            <!-- Add an input field for the file name -->
+            <label for="filename">File Name:</label>
+            <input type="text" id="filename" name="filename"><br>
+            <button type="submit">Upload</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h2>Download Footage</h2>
+        <div>
+            <ul>
+                {% for video in content %}
+                <li><a href="{{ url_for('downloadVideo', contentKey=video) }}">{{ video }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
